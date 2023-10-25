@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(22, 22, 22);
+    font-family: 'Bebas Neue';
+    background-image: url(https://img.freepik.com/vetores-premium/padrao-perfeito-de-hamburguer-no-quadro-negro-impressao-repetivel-ilustracao-vetorial-sem-fim_515275-651.jpg);
+}
+
+
+/* COMEÇO DO CABEÇALHO */
+
+.header {
+    height: 13vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: black;
+    box-shadow: 0 0 1rem rgb(255, 165, 0);
+    padding-top: 20px;
+}
+
+/* TITULO E IMAGEM AO LADO DO TITULO */
+.tituloh1 {
+    margin-top: 10px;
+}
+
+.imgtitulo {
+    width: 75px;
+    height: 75px;
+    padding-right: 10px;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    font-size: 25px;
+    color: white;
+    text-shadow: 0 0 0.4rem rgb(255, 165, 0);
+}
+
+/* TITULO E IMAGEM AO LADO DO TITULO */
+
+/* MENU DE NAVEGAÇÃO DO SITE */
+.menu {
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.listamenu {
+    display: flex;
+
+}
+
+.menu li {
+    font-size: 22px;
+    list-style: none;
+    cursor: pointer;
+    padding-left: 2rem;
+    padding-right: 5px;
+    margin-top: 5px;
+    margin-right: 20px;
+
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* FIM MENU DE NAVEGAÇÃO DO SITE */
+
+
+/* ANIMAÇÕES DE IMAGEM DO TITULO/MENU DE NAVEGAÇÃO */
+.rota1 {
+    transition: transform 0.2s;
+}
+
+.rota1:hover {
+    transform: scale(1.2);
+}
+
+.imgtitulo {
+    transition: transform 0.2s;
+}
+
+.imgtitulo:hover {
+    transform: scale(1.2);
+}
+/* FIM ANIMAÇÕES DE IMAGEM DO TITULO/MENU DE NAVEGAÇÃO */
+
+
+/* FIM DO CABEÇALHO */
+
+
+
+/* COMEÇO DO CÓNTEUDO DE LANCHES/PROMOÇÃO DO SITE */
+
+
+.principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    overflow: hidden;
+}
+
+
+.titulopromo {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: orange;
+
+}
+
+
+.promoh1 {
+    font-size: 50px;
+    color: rgb(245, 244, 244);
+    text-shadow: 2px 2px 4px black;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.lanches {
+    background-color: rgb(43, 36, 36);
+    width: 1000px;
+}
+
+.tituloConteudo {
+    text-align: center;
+    color: rgb(255, 165, 0);
+    text-shadow: 2px 2px 4px black;
+    padding-top: 15px;
+    font-size: 45px;
+}
+
+.areaProdutos table {
+    border-spacing: 50px;
+    border-collapse: separate;
+    text-align: center;
+}
+
+.areaProdutos td {
+    width: 250px;
+    font-size: 20px;
+    color: rgb(255, 165, 0);
+    text-shadow: 2px 2px 4px black;
+    padding-left: 10px;
+
+}
+
+.areaProdutos td img {
+    width: 125px;
+    height: 125px;
+    margin-top: 5px;
+    border-radius: 50%;
+    border: 2px solid rgb(255, 165, 0);
+
+}
+
+.tituloProduto {
+    font-size: 35px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.precoProduto {
+    margin: 0;
+    font-size: 35px;
+}
+
+td {
+    background-color: black;
+    transition: transform 1s;
+    border: 4px solid orange;
+}
+
+
+
+td:hover {
+    transform: scale(1.2);
+}
+
+/* FIM DO CÓNTEUDO DE LANCHES DO SITE */
+
+
+/* TELEFONE DE CONTATO */
+
+.entrega {
+    position: fixed;
+    bottom: 30px;
+    right: 10px;
+    height: 100px;
+    width: 300px;
+}
+
+
+.entrega img {
+    border-radius: 50%;
+    border: 3px solid white;
+    height: 100px;
+    width: 100px;
+    transition: 1s;
+}
+
+.entrega img:hover {
+    transform: rotateZ(360deg);
+}
+
+
+.tel {
+    position: absolute;
+    left: 120px;
+    height: 75px;
+    background-color: black;
+    color: white;
+    margin-top: 13px;
+    padding: 10px;
+    padding-bottom: 0;
+    border-radius: 15px;
+    border: 3px solid white;
+    transition: 0.2s;
+}
+
+.tel:hover {
+    transform: scale(1.1);
+}
+
+.tel h4 {
+    margin: 0;
+    font-size: 20px;
+    text-align: center;
+}
+
+.tel h5 {
+    margin-top: 10px;
+    font-size: 17px;
+}
+
+.tel a {
+    color: white;
+    text-decoration: none;
+}
+
+/* TELEFONE DE CONTATO */
+
+
+
+
+/* FOOTER DIVULGAÇÃO DO MEU NOME */
+
+
+#footer_copyright {
+
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    font-size: 0.9rem;
+    padding: 0.5rem;
+    font-weight: 100;
+    color: white;
+    box-shadow: 0 0 1rem rgb(255, 165, 0);
+}
+
+/* FIM DO FOOTER DIVULGAÇÃO DO MEU NOME */
+
+
+
+/* CARROSSEL DO CODEPEN CONFIA */
+
+section.slider{
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    padding: 0 in "important";
+    overflow: hidden;
+}
+
+.slider-content{  
+    width: 400%;    
+    height: auto;    
+    display: flex;
+}
+
+.slider-content input {
+    display: none;
+}
+
+.slide-box{
+    width: 25%;
+    height: auto;
+    position: relative;
+    text-align: center;
+    transition: 1s;
+}
+
+.slide-box img{
+    width: 100%;
+}
+
+.nav-manual, .nav-auto{
+    position: absolute;
+    width: 100%;
+    margin-top: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-manual .manual-btn, .nav-auto div{
+    border: 2px solid rgb(255, 165, 0);
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child){
+    margin-right: 10px;
+}
+
+
+.nav-manual .manual-btn:hover{
+    background-color: black;
+}
+
+#radio1:checked ~ .nav-auto .auto-btn1{
+    background-color: black;
+}
+#radio2:checked ~ .nav-auto .auto-btn2{
+    background-color: black;
+}
+#radio3:checked ~ .nav-auto .auto-btn3{
+    background-color: black;
+}
+
+#radio1:checked ~ .primeiro{
+    margin-left: 0%;
+}
+
+#radio2:checked ~ .primeiro{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .primeiro{
+    margin-left: -50%;
+}
+
+/* FIM CARROSSEL DO CODEPEN CONFIA */

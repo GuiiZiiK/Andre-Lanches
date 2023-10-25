@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(22,22,22);
+    font-family: 'Bebas Neue';
+    background-image: url(https://img.freepik.com/vetores-premium/padrao-perfeito-de-hamburguer-no-quadro-negro-impressao-repetivel-ilustracao-vetorial-sem-fim_515275-651.jpg);
+}
+
+
+/* COMEÇO DO CABEÇALHO */
+
+.header {
+    height: 13vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color: black;
+    box-shadow: 0 0 1rem rgb(255,165,0);
+    padding-top: 20px;
+}
+
+/* TITULO E IMAGEM AO LADO DO TITULO */
+.tituloh1{
+    margin-top: 10px;
+}
+
+.imgtitulo {
+    width: 75px;
+    height: 75px;
+    padding-right: 10px;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    font-size: 25px;
+    color: white;
+    text-shadow: 0 0 0.4rem rgb(255,165,0);
+}
+
+/* FIM DO TITULO E IMAGEM AO LADO DO TITULO */
+
+
+/* MENU DE NAVEGAÇÃO DA PÁGINA  */
+.menu {
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.listamenu{
+    display: flex;
+}
+
+.menu li {
+    font-size: 22px;
+    list-style: none;
+    cursor: pointer; 
+    padding-left: 2rem;
+    padding-right: 5px;
+    margin-top: 5px;
+    margin-right: 20px;
+
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* FIM DO MENU DE NAVEGAÇÃO DA PÁGINA */
+
+/* ANIMAÇÕES DE IMAGEM DO TITULO/MENU DE NAVEGAÇÃO */
+
+.rota1 {
+    transition: transform 0.2s;
+}
+.rota1:hover {
+    transform: scale(1.2);
+}
+
+.imgtitulo {
+    transition: transform 0.2s;
+}
+
+.imgtitulo:hover {
+    transform:scale(1.2);
+
+}
+/* FIM DAS ANIMAÇÕES DE IMAGEM DO TITULO/MENU DE NAVEGAÇÃO */
+
+
+
+/* FIM DO CABEÇALHO */
+
+/* INICIO DO CONTEÚDO PRINCIPAL DA PÁGINA*/ 
+
+.content {
+    display: block;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(43, 36, 36);
+    width: 1000px;
+}
+
+.tituloContato {
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    background-color:  rgb(255,165,0);
+    text-shadow: 3px 3px 6px black;
+}
+
+/* FORMULÁRIO DA PÁGINA DE CONTATO */
+.formulario {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 300px;
+
+}
+
+.seu {
+    margin-left: 190px;
+    color: rgb(255,165,0);
+    text-shadow: 2px 2px 4px black;
+    font-size: 25px
+}
+
+
+
+/* AREA DE TEXTO DA SUGESTÃO DA PÁGINA */
+.seutexto {
+    padding-left: 175px;
+    color: rgb(255,165,0);
+    text-shadow: 2px 2px 4px black;
+    font-size: 25px;
+}
+.areaDeTexto {
+    padding-top: 10px;
+}
+
+input {
+    width: 395px ;
+    background-color: rgb(255,165,0);
+}
+
+textarea {
+    background-color: rgb(255,165,0);
+
+}
+
+textarea, input {
+    border: 4px solid black;
+}
+
+.sugestao h2 {
+    text-align: center;
+    font-size: 40px;
+    color: rgb(255,165,0);
+    text-shadow: 2px 2px 4px black;
+    margin-top: 40px;
+}
+
+/* AREA DE TEXTO DA SUGESTÃO DA PÁGINA */
+
+/* FIM FORMULÁRIO DA PÁGINA DE CONTATO */
+
+
+
+
+/* BOTÃO DE ENVIO DE MENSAGEM */
+.send-button {
+    margin-top: 25px;
+    height: 25px;
+    width: 400px;
+    overflow: hidden;
+    transition: all .2s ease-in-out;
+}
+
+.alt-send-button {
+    margin-top: 4px;
+    width: 400px;
+    height: 34px;
+    transition: all .2s ease-in-out;
+}
+
+.send-text {
+    display: block;
+    margin-top: 15px;
+    letter-spacing: 2px;
+}
+
+.alt-send-button:hover {
+    transform: translate3d(0px, -29px, 0px);
+}
+
+.btn {
+    background-color: rgb(255,165,0);
+    border-style: none;
+}
+
+/* FIM DO BOTÃO DE ENVIO DE MENSAGEM */
+
+
+/* LOCALIZAÇÃO DA LANCHONETE */
+
+.gps{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+    margin-top: 20px;
+
+}
+
+.gps iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+
+.mapagps h2 {
+    text-align: center;
+    font-size: 40px;
+    color: rgb(255,165,0);
+    text-shadow: 2px 2px 4px black;
+    margin-top: 40px;
+}
+
+/* LOCALIZAÇÃO DA LANCHONETE */
+
+
+
+
+
+/* ICONES DAS REDES SOCIAIS */
+.redes-sociais h2 {
+    text-align: center;
+    font-size: 40px;
+    color: rgb(255,165,0);
+    text-shadow: 2px 2px 4px black;
+}
+
+
+
+#footer_social_midia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    margin-top: 1.5rem;
+}
+
+#footer_social_midia .footer-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    width: 4rem;
+    color: white;
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+
+#footer_social_midia .footer-link i {
+    font-size: 1.25rem;
+
+}
+#footer_social_midia .footer-link:hover {
+opacity: 0.5;
+}
+
+#instagram {
+    background: linear-gradient(#7F37C9, #FF2992, #FF9807);
+}
+
+#linkedin {
+    background-color: #4267B3;
+}
+
+#github {
+    background-color: black;
+}
+
+/* FIM ICONES DAS REDES SOCIAIS */
+
+/* APENAS UMA PARTE PARA ACABAMENTO DA PARTE LARANJA FINALIZANDO A PÁGINA DE CONTÉUDO PRINCIPAL */
+.suma {
+    color: rgb(255,165,0);
+    text-shadow: none;
+}
+
+/* FIM DA PARTE LARANJA */
+
+
+
+/* FIM DO CONTEÚDO PRINCIPAL DA PÁGINA */
+
+
+
+/* RODAPE DE DIVUGALÇÃO DO MEU NOME */
+
+#footer_copyright {
+
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    font-size: 0.9rem;
+    padding: 0.5rem;
+    font-weight: 100;
+    color: white;
+    box-shadow: 0 0 1rem rgb(255,165,0);
+}
